@@ -1,9 +1,8 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: frontend
+  name: nginx-replicaset
   labels:
-    app: guestbook
     tier: frontend
 spec:
   # modify replicas according to your case

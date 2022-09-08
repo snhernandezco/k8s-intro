@@ -20,7 +20,7 @@ Weave Scope facilita la visualización del cluster a través de una interfaz gr�
 
 Para instalarlo, clonar este repositorio en el controlplane, ejecutar los siguientes comandos:
 
-```
+```bash
 mkdir workshop
 cd workshop/
 git clone https://github.com/snhernandezco/k8s-intro.git
@@ -28,5 +28,26 @@ cd k8s-intro/
 make deploy
 ```
 
-## Desplegar un pod
+## Desplegar un Pod
 
+```bash
+kubectl apply -f k8s-objects/1_pod.yaml
+```
+
+## Desplegar un ReplicaSet
+
+```bash
+kubectl apply -f k8s-objects/2_replicaset.yaml
+```
+
+## Desplegar un Deployment
+
+```bash
+kubectl apply -f k8s-objects/3_deployment.yaml
+```
+
+## Desplegar un HorizontalPodAutoscaler (HPA)
+
+```bash
+kubectl apply -f k8s-objects/4_hpa.yaml
+```
